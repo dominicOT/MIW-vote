@@ -3,14 +3,21 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Home, KeyRound, BarChart3, ShieldCheck, Settings2, UserPlus } from "lucide-react";
+import Image from "next/image";
+
+export const metadata = {
+  title: "50 MOST INFLUENTIAL SIERRA LEONEAN WOMEN AWARDS 2025",
+  description: "Voting Platform.",
+};
 
 export default function SiteHeader() {
   return (
     <header className="bg-card border-b shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-primary flex items-center">
-          <VoteIcon className="h-8 w-8 mr-2" />
-          VoteVerify
+          {/* <VoteIcon className="h-8 w-8 mr-2" /> */}
+          {/* VoteVerify */}
+          <Image src={"/logo.png"} alt="VoteVerify Logo" width={100} height={110} />
         </Link>
         <nav className="flex items-center gap-2">
           <Button variant="ghost" asChild>
