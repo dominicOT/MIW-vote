@@ -2,7 +2,7 @@
 
 import { db } from "@/lib/firebase/config";
 import type { FirestoreOtpDoc, FirestoreCandidateDoc, FirestoreTotalsDoc } from "@/lib/types";
-import { doc, getDoc, writeBatch, Timestamp, serverTimestamp } from "firebase/firestore";
+import { doc, getDocs, writeBatch, Timestamp, serverTimestamp } from "firebase/firestore";
 import { z } from "zod";
 
 const CastVoteSchema = z.object({
@@ -24,7 +24,7 @@ export async function castVote(otp: string, candidateId: string, votesToCast: nu
 
     // 1. Verify OTP
     const otpDocRef = doc(db, "otps", otpValue);
-    const otpDocSnap = await getDoc(otpDocRef);
+    const otpDocSnap = await getDocs(otpDocRef);
 
     if (!otpDocSnap.exists()) {
       return { success: false, error: "Invalid OTP." };

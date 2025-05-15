@@ -19,7 +19,7 @@ export default function AdminDashboardPage() {
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <Card className="shadow-lg hover:shadow-xl transition-shadow">
+        {/* <Card className="shadow-lg hover:shadow-xl transition-shadow">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-lg font-medium">Payment Verification</CardTitle>
             <UploadCloud className="h-6 w-6 text-primary" />
@@ -32,7 +32,7 @@ export default function AdminDashboardPage() {
               <Link href="/admin/payment-verification">Go to Verification</Link>
             </Button>
           </CardContent>
-        </Card>
+        </Card> */}
 
         <Card className="shadow-lg hover:shadow-xl transition-shadow">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
