@@ -17,12 +17,12 @@ export default function SiteHeader() {
         <Link href="/" className="text-2xl font-bold text-primary flex items-center">
           {/* <VoteIcon className="h-8 w-8 mr-2" /> */}
           {/* VoteVerify */}
-          <Image src={"/logo.png"} alt="VoteVerify Logo" width={100} height={110} />
+          <Image src={"/logo.png"} alt="VoteVerify Logo" width={150} height={160} />
         </Link>
         <nav className="flex items-center gap-2">
           <Button variant="ghost" asChild>
             <Link href="/">
-              <KeyRound className="mr-2 h-4 w-4" /> OTP Entry
+              <KeyRound className="mr-2 h-4 w-4" /> Vote 🗳️
             </Link>
           </Button>
           {/* <Button variant="ghost" asChild>

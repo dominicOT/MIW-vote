@@ -17,9 +17,9 @@ import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Home, UploadCloud, Ticket, Users, BarChart3, Settings2, ChevronRight, PanelLeft } from "lucide-react";
 
+// { href: "/admin/payment-verification", label: "Payment Verification", icon: UploadCloud },
 const adminNavItems = [
   { href: "/admin", label: "Dashboard", icon: Home },
-  { href: "/admin/payment-verification", label: "Payment Verification", icon: UploadCloud },
   { href: "/admin/otp-generation", label: "OTP Generation", icon: Ticket },
   { href: "/admin/manage-candidates", label: "Manage Candidates", icon: Users },
   { href: "/admin/results", label: "Vote Results", icon: BarChart3 },

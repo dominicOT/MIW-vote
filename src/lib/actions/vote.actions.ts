@@ -2,7 +2,7 @@
 
 import { db } from "@/lib/firebase/config";
 import type { FirestoreOtpDoc, FirestoreCandidateDoc, FirestoreTotalsDoc } from "@/lib/types";
-import { doc, getDoc, writeBatch, Timestamp, serverTimestamp } from "firebase/firestore";
+import { collection, doc, getDoc, getDocs, writeBatch, Timestamp, serverTimestamp } from "firebase/firestore";
 import { z } from "zod";
 
 const CastVoteSchema = z.object({
@@ -84,7 +84,7 @@ export async function castVote(otp: string, candidateId: string, votesToCast: nu
 
 export async function getVoteResults() {
   try {
-    const candidatesSnapshot = await getDocs(doc(db, "candidates"));
+    const candidatesSnapshot = await getDocs(collection(db, "candidates"));
     const candidates = candidatesSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() } as import("@/lib/types").Candidate));
     
     const totalsDocSnap = await getDoc(doc(db, "metadata", "totals"));

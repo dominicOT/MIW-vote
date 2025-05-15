@@ -108,7 +108,7 @@ export default function VotingPage() {
           className: "bg-accent text-accent-foreground"
         });
         sessionStorage.removeItem("voteOtp");
-        router.push("/admin/results"); // Or a thank you page
+        router.push("/result");
       } else {
         const errorMessage = typeof result.error === 'string' ? result.error : "An unknown error occurred.";
         toast({
