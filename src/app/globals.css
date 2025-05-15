@@ -23,7 +23,7 @@ body {
     --border: 207 69% 80%; /* light blue border */
     --input: 0 0% 100%; /* white input background, border uses --border */
 
-    --primary: 207 69% 53%; /* #3498db calm blue */
+    --primary: 207 69% 53%; /*rgb(255, 224, 25) calm blue */
     --primary-foreground: 0 0% 100%; /* white */
 
     --secondary: 207 69% 90%; /* lighter blue */
