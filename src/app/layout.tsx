@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'VoteVerify - Event Voting Platform',
-  description: 'Verify payments and cast votes securely.',
+  title: 'VoteVerify',
+  description: '50 MOST INFLUENTIAL SIERRA LEONEAN WOMEN AWARDS 2025',
 };
 
 export default function RootLayout({
