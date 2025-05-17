@@ -1,5 +1,2 @@
-# Firebase Studio
-
-This is a NextJS starter in Firebase Studio.
-
-To get started, take a look at src/app/page.tsx.
+This is an open voting platform that features OTP generation, OTP verification for voting, AI payment verification and real time result calculation with visual analysis.
+The project is also linked with a database.
